@@ -1,6 +1,6 @@
 function towelSort(arr) {
   let result = [];
-  if (arr.length > 0) {
+  if (arr && arr.length > 0) {  
     for (let i = 0; i < arr.length; i++) {
       for (let j = 0; j < arr[i].length; j++) {
         let columnInd = i % 2 === 0
@@ -19,6 +19,4 @@ let arr = [[1, 2, 3,],
            [12, 11, 10]]
 towelSort(arr);
 
-module.exports = function towelSort(matrix) {
-  return [];
-}
+module.exports = towelSort;
